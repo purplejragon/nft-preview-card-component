@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200..900&display=swap');
+:root {
+    --cyan: hsl(178, 100%, 50%);
+    --soft-blue: hsl(215, 51%, 70%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --card-shadow: hsl(216, 50%, 8%);
+    --line: hsl(215, 32%, 27%);
+}
+body {
+    background-color: var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+}
+
+/* general purpose classes */
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.white {
+    cursor:pointer;
+    color: white;
+    transition-duration: 0.2s;
+}
+.white:hover {
+    color: var(--cyan);
+}
+
+/* specific classes */
+.line {
+    color: var(--line);
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 275px;
+    height: 500px;
+
+    background-color: var(--card-bg);
+    box-shadow: 0px 0px 30px var(--card-shadow);
+    color: var(--soft-blue);
+
+    border-radius: 10px;
+    padding: 20px;
+}
+.title {
+    font-size: 21px;
+}
+.main-img {
+    border-radius: 10px;
+
+    max-width: 100%;
+    max-height: 100%;
+    transition-duration: 0.2s;
+    display: inline;
+}
+.main-img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.main-img-holder {
+    width: 275px;
+    height: 275px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+.main-img-holder:hover {
+    background-color: var(--cyan);
+}
+
+.eth {
+    float: left;
+    vertical-align: middle;
+    color: var(--cyan);
+}
+.time {
+    float: right;
+    vertical-align: middle;
+}
+.logo {
+    display: inline;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+.logo-text {
+    display: inline;
+    vertical-align: middle;
+}
+.avatar {
+    height: 30px;
+}
+.avatar-img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+    float: left;
+    border: 1px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.avatar-text {
+    font-size: 16px;
+    height: 30px;
+    padding-top: 4px;
+}
+
